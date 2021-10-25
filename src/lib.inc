@@ -86,7 +86,7 @@ stock void force_open()
 stock void slay_all()
 {
 	// slay everyone
-	for (int i=1; i<=MaxClients; i++)
+	for (int i=0; i < 64; i++)
 	{
 		if (is_valid_client(i) && IsPlayerAlive(i)) 
 		{

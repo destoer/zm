@@ -40,7 +40,5 @@ public Action OnWeaponEquip(int client, int weapon)
 public Action OnPlayerSpawn(Handle event, const String:name[], bool dontBroadcast)
 {
 	int client = GetClientOfUserId(GetEventInt(event, "userid"));
-
-    zombie_spawn(client);
-
+	zombie_spawn(client);
 }
